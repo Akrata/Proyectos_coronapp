@@ -94,11 +94,11 @@ header button{
 }
 nav{
     width: 312px;
-    height: 1000px;
+    height: 1257px;
     position: absolute;
     top: 102px;
     right: 0;
-    z-index: 2;
+    z-index: 99;
     background: var(--verde);
     padding: 68px;
     display: none;
@@ -183,6 +183,7 @@ article p{
     position: relative;
     z-index: 2;
     gap: 40px;
+    margin-bottom: 40px;
 }
 .info-card-inside{
     display: flex;
@@ -258,6 +259,30 @@ article p{
 .caracteristicas{
     background: var(--gris-claro);
     padding: 41px 17px 59px 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.caracteristicas-card{
+    background: var(--blanco);
+    border-radius: 16px;
+    padding: 28px 82px 22px 82px;
+}
+.caracteristicas-card-inside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+}
+.caracteristicas-card-inside h2{
+    color: var(--verde)!important;
+    letter-spacing: .14rem;
+}
+.caracteristicas-card-inside p{
+    color: var(--negro)!important;
+    letter-spacing: .37rem;
 }
 .caracteristicas article{
     display: flex;
@@ -266,3 +291,88 @@ article p{
     text-align: center;
     gap: 16px;
 }
+.caracteristicas-imagen{
+    background: var(--blanco);
+}
+
+.caracteristicas-imagen img{
+    display: block;
+
+    margin: auto;
+}
+
+/*FOOTER*/
+footer{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.footer-header{
+margin: 0px 16px;
+display: grid;
+grid-row-gap: 16px;
+}
+.footer-title{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 126%;
+    color: var(--verde);
+}
+.footer-title span{
+    color:var(--negro);
+}
+.footer-subtitle{
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-size:12px;
+    line-height: 138%;
+    color: var(--gris);
+    letter-spacing: 0.08rem;
+    
+}
+.footer-card{
+    margin: 0px 48px;
+    border-radius: 8px;
+    padding: 36px 17px 30px 17px;
+    max-width: 276px;
+}
+.footer-card-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 58px;
+}
+.footer-card-inside div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.footer-card-inside h4{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.08rem;
+    line-height: 138%;
+    color: var(--negro);
+}
+.footer-card-inside p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08rem;
+    line-height: 138%;
+    color: var(--gris);
+}
+.footer-bot{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-bot button{
+    all: unset;
+    cursor: pointer;
+}
+
