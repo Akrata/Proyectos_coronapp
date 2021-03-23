@@ -332,7 +332,11 @@ grid-row-gap: 16px;
     line-height: 138%;
     color: var(--gris);
     letter-spacing: 0.08rem;
-    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 .footer-card{
     margin: 0px 48px;
