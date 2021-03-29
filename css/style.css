@@ -78,6 +78,9 @@
     display: block;
 }
 
+button{
+    cursor: pointer;
+}
 
 header{
     display: flex;
@@ -296,6 +299,8 @@ article p{
     background: url(../img/Group\ 15.png) center no-repeat, var(--blanco);
     background-size: contain;
     padding: auto;
+    margin: auto;
+    margin-top: 50px;
     width: 341px;
     height: 185px;
     display: flex;
@@ -336,7 +341,8 @@ footer{
 }
 .cards{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
 .footer-card{
@@ -458,8 +464,11 @@ footer{
         margin-bottom: 100px ; 
     }
     .cards{
+        flex-direction: row;
+        flex-wrap: wrap;
         gap:20px;
     }
+   
     .footer-card{
         width: 220px;
         margin: 0;
@@ -528,6 +537,7 @@ footer{
         background-color: var(--verde);
         position: absolute;
         right: 0;
+        top: -100px;
         border-radius: 30px 0px 0px 30px;
     }
     .presentation-article{
